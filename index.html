@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>写给Angel的信 · Yours Always</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- 手写体（可替换） -->
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 信封外壳 -->
+  <div class="envelope">
+
+    <!-- 1. 顶部滚动图 -->
+    <div class="slider" id="slider">
+      < img src="images/slider1.jpg" alt="memory-1" class="active">
+      < img src="images/slider2.jpg" alt="memory-2">
+      < img src="images/slider3.jpg" alt="memory-3">
+      <!-- 左右按钮 -->
+      <button id="prev" class="nav">‹</button>
+      <button id="next" class="nav">›</button>
+    </div>
+
+    <!-- 2. 关系图表 -->
+    <section class="relationship">
+      < img src="images/relationship_chart.png" alt="我们的关系图">
+    </section>
+
+    <!-- 3. 中央💌心形按钮 -->
+    <a href=" " class="heart" title="进入日记">
+      💌
+    </a >
+
+    <!-- 4. 玫瑰按钮（子功能面板开关） -->
+    <button class="rose" id="roseBtn" title="功能菜单">🌹</button>
+
+    <!-- 子功能弹窗 -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h3>功能面板</h3>
+        <ul>
+          <li>挂件 / 标志区</li>
+          <li>系统日志</li>
+          <li>共同香气册</li>
+        </ul>
+        <span class="close" id="closeModal">×</span>
+      </div>
+    </div>
+
+  </div><!-- /envelope -->
+
+<script src="script.js"></script>
+</body>
+</html>
